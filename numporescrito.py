@@ -8,7 +8,7 @@ while continua=='s' or continua=='S':
 
     if num < 0 or num > 999:
         print('Opção inválida')
-        
+
     else:
         n1 = num // 1 % 10
         n2 = num // 10 % 10
@@ -184,5 +184,4 @@ while continua=='s' or continua=='S':
                 print('Nove')
 
     continua = input('Deseja continuar? (s/n) ')
-    
- 
+
