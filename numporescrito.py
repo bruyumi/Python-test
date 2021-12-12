@@ -2,16 +2,19 @@ continua = str('s')
 
 while continua=='s' or continua=='S':
 
+    num = 0
+
     num = int(input('Informe um número de 0 a 999: '))
-    n1 = num // 1 % 10
-    n2 = num // 10 % 10
-    n3 = num // 100 % 10
 
-    if num > 999 and num < 0:
-        print('Número inválido. ')
-
+    if num < 0 or num > 999:
+        print('Opção inválida')
+        
     else:
-        print('O número {:.0f} por exenso é: '.format(num), end="")
+        n1 = num // 1 % 10
+        n2 = num // 10 % 10
+        n3 = num // 100 % 10
+
+        print('O número {:.0f} por extenso é: '.format(num), end="")
 
         if n3 > 0:
             if n3 == 1:
@@ -152,7 +155,7 @@ while continua=='s' or continua=='S':
         if n1 >= 0:
             if n1 == 0:
                 print('Zero')
-                
+
             if n1 == 1:
                 print('Um')
 
