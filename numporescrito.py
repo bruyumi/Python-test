@@ -1,20 +1,20 @@
 continua = str('s')
 
-while continua=='s' or continua=='S':
+while continua == 's' or continua == 'S' or continua == 'Sim' or continua == 'SIM' or continua == 'sim':
 
     num = 0
 
-    num = int(input('Informe um número de 0 a 999: '))
+    num = int(input('\nInforme um número de 0 a 999: '))
 
     if num < 0 or num > 999:
-        print('Opção inválida')
+        print('\nOpção inválida')
 
     else:
         n1 = num // 1 % 10
         n2 = num // 10 % 10
         n3 = num // 100 % 10
 
-        print('O número {:.0f} por extenso é: '.format(num), end="")
+        print('\nO número {:.0f} por extenso é: '.format(num), end="")
 
         if n3 > 0:
             if n3 == 1:
@@ -183,5 +183,7 @@ while continua=='s' or continua=='S':
             elif n1 == 9:
                 print('Nove')
 
-    continua = input('Deseja continuar? (s/n) ')
+    continua = input('\nDeseja informar outro número? (PS. Responda com "S" para continuar, qualquer outra opção terminará o programa): ')
+
+print('\nFIM DO PROGRAMA! OBRIGADA =] ')
 
