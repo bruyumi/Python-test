@@ -33,6 +33,7 @@ if n3 > 0:
     elif n3 == 5:
         if n3 == 2 and n2 == 0 and n1 == 0:
             print('Quinhentos')
+            
         else:
             print('Quinhentos e ', end="")
 
@@ -166,3 +167,5 @@ if n3 > 0:
 
         elif n1 == 9:
             print('Nove')
+
+            
